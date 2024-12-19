@@ -25,6 +25,7 @@ This project involves designing and developing a replica of the HRX website's us
 - **Mansi Sood**: HRX Hub, Terms and Conditions Page, Terms of Use Page  
 - **Shanewaz Mohammad**: HRX Blog and HRX Community Page  
 - **Swayam Pillare**: Collection Page  
+_**Akshay**:Prees relase, and connect page
 
 ---
 
@@ -32,4 +33,4 @@ This project involves designing and developing a replica of the HRX website's us
 
 The repository follows a modular structure to ensure efficient collaboration and development:
 
-Hosted Link:
+Hosted Link: https://subhasuryamdas.github.io/HRX_Clone_/Gudu/index.html
