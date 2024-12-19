@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wearable</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Avenir Font -->
+    <style>
+        @font-face {
+            font-family: 'Avenir';
+            src: url('https://fonts.cdnfonts.com/s/55793/AvenirLTStd-Book.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        } 
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<header class="flex justify-between items-center bg-black text-white p-3 px-16">
+    <div class="logo">
+      <img src="./ASSETS/HRX-LOGO.png" alt="HRX Logo" width="70px" />
+    </div>
+    <nav class="flex gap-10 text-sm font-semibold">
+      <a href="" class="text-white hover:text-red-600">Home</a>
+      <a href="" class="text-white hover:text-red-600">Collection</a>
+      <a href="" class="text-white hover:text-red-600">HRX Hub</a>
+      <a href="" class="text-white hover:text-red-600">Community</a>
+      <a href="" class="text-white hover:text-red-600">Blog</a>
+      <a href="" class="text-white hover:text-red-600">Press Release</a>
+      <a href="" class="text-white hover:text-red-600">Connect</a>
+    </nav>
+    <button class="bg-[#e74747] text-white py-2 px-4 hover:shadow-[0_0_10px_0_#e74747]">Login</button>
+
+  </header>
+<body class="bg-gray-100">
+    <div class="relative w-full h-[350px]"> <!-- Set the height for the banner -->
+        <!-- Video Background -->
+        <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover">
+          <source src="ASSETS/HRX-Home-page-Video.mp4" type="video/mp4">
+        </video>
+      
+        <!-- Red Cardbox -->
+        <div class="banner-leftcardbox bg-[#e74747] p-4 text-white  shadow-lg absolute bottom-10 left-0 h-[110px] w-[54px] flex items-center justify-center">
+          <!-- Content for the left cardbox -->
+        </div>
+      
+        <!-- Text Positioned Right of the Cardbox -->
+        <div class="absolute bottom-12 left-[75px] flex flex-col justify-center space-y-2 max-w-[400px]">
+            <span class="fsize16 sm-fsize10 text-[#e74747] font-light">HRX COLLECTION</span>
+            <h2 class="uppercase font-bold text-white text-[22px] sm-text-[20px] mt-0.5">Find your edge</h2>
+            <span class="fsize8 sm-fsize7 text-white font-medium inline-block ml-1 mt-0.5">Everything you need throughout your fitness journey</span>
+          </div>
+        
+          
+
+        </div>
+        </div>
+      </div>
+      
+      
+  </div>
+  
+  
+       
+      </div>
+    <!-- Navbar -->
+    <nav class="bg-white">
+        <ul class="flex justify-center items-center gap-8 py-4">
+            <li class="text-lg font-bold flex items-center">
+                <a href="collection.html" data-v-5fddadf1="" class="text-[#3d3d3d] font-medium mr-3 text-[14px] uppercase cursor-pointer hover:text-red-500 transition duration-300">
+                    COLLECTIONS
+                </a>
+                <span class="border-r-2 border-gray-400 h-8 mx-3"></span>
+            </li>
+            
+            <li class="relative group">
+                <a href="apparel.html" class="text-[#3d3d3d] font-medium text-[14px] capitalize cursor-pointer hover:text-red-500 transition duration-300">
+                    Apparel
+                </a>
+                <!-- Dropdown Menu -->
+                <div class="absolute hidden group-hover:block bg-white shadow-2xl rounded-lg w-[1000px] top-full left-[-300px] z-50 transition-all duration-300 ease-in-out group-hover:opacity-100 opacity-0">
+                    <!-- Small Navbar -->
+                    <div class="py-2 px-3 flex items-center text-xs text-gray-600 space-x-4 overflow-x-auto whitespace-nowrap mt-8">
+                        <!-- Dropdown menu links -->
+                        <a href="#" class="hover:text-red-700">U17</a>
+                        <a href="#" class="hover:text-red-700">Men Clothing</a>
+                        <a href="#" class="hover:text-red-700">Women Clothing</a>
+                        <a href="#" class="hover:text-red-700">Men Footwear</a>
+                        <a href="#" class="hover:text-red-700">Women Footwear</a>
+                        <a href="#" class="hover:text-red-700">U17 Girl's</a>
+                        <a href="#" class="hover:text-red-700">HRX Running</a>
+                        <a href="#" class="hover:text-red-700">HRX Training</a>
+                        <a href="#" class="hover:text-red-700">HRX Yoga</a>
+                        <a href="#" class="hover:text-red-700">HRX EGDE</a>
+                        <a href="#" class="hover:text-red-700">HRX TAPED COLLECTION</a>
+                    </div>
+                    
+                    <!-- Image Grid with Reduced Gap Between Text and Image -->
+                    <div class="p-6 grid grid-cols-3 gap-20 mt-0"> <!-- Removed mt-2 to eliminate space between divs -->
+                        <!-- TSHIRTS Section -->
+                        <div class="text-center py-0">
+                            <img src="https://nimbuscluster.blob.core.windows.net/server01/hrx/productsubcatImage/productsubcatImage-p0Srbfr7cJRSRHenxfaH--1663312534" alt="T-Shirts" class="mx-auto w-full h-auto  shadow-md">
+                            <h3 class="text-lg font-medium text-gray-800 mb-0 mt-1">TSHIRTS</h3>
+                        </div>
+                        <!-- SWEATSHIRT Section -->
+                        <div class="text-center py-0">
+                            <img src="https://nimbuscluster.blob.core.windows.net/server01/hrx/productsubcatImage/productsubcatImage-DYSb1yPoHvTYUUtJTNInn-1663312561" alt="Sweatshirt" class="mx-auto w-full h-auto  shadow-md">
+                            <h3 class="text-lg font-medium text-gray-800 mb-0 mt-1">SWEATSHIRT</h3>
+                        </div>
+                        <!-- TRACKSUIT Section -->
+                        
+                        <div class="text-center py-0">
+                            <img src="https://nimbuscluster.blob.core.windows.net/server01/hrx/productsubcatImage/productsubcatImage-15IQ_VZNWlcxNCMuSmEhE-1662621443" alt="Tracksuit" class="mx-auto w-full h-auto  shadow-md">
+                            <h3 class="text-lg font-medium text-gray-800 mb-0 mt-1">TRACKSUIT</h3>
+                        </div>
+                        <div class="text-center py-0">
+                            <img src="https://nimbuscluster.blob.core.windows.net/server01/hrx/productsubcatImage/productsubcatImage-bsRiUM4yrzYhDIW572BW4-1662621786" alt="Tracksuit" class="mx-auto w-full h-auto  shadow-md">
+                            <h3 class="text-lg font-medium text-gray-800 mb-0 mt-1">TRACK PANTS & TIGHTS</h3>
+                        </div>
+                        <div class="text-center py-0">
+                            <img src="https://nimbuscluster.blob.core.windows.net/server01/hrx/productsubcatImage/productsubcatImage-15IQ_VZNWlcxNCMuSmEhE-1662621443" alt="Tracksuit" class="mx-auto w-full h-auto  shadow-md">
+                            <h3 class="text-lg font-medium text-gray-800 mb-0 mt-1">SHORTS</h3>
+                        </div>
+                        <div class="text-center py-0">
+                            <img src="https://nimbuscluster.blob.core.windows.net/server01/hrx/productsubcatImage/productsubcatImage-15IQ_VZNWlcxNCMuSmEhE-1662621443" alt="Tracksuit" class="mx-auto w-full h-auto  shadow-md">
+                            <h3 class="text-lg font-medium text-gray-800 mb-0 mt-1">SOCKS</h3>
+                        </div>
+                    </div>
+                    
+                       
+            </li>
+            
+            
+            <li>
+                <a data-v-5fddadf1="" href="accessories.html" id="accessoriesLink" class="text-[#3d3d3d] font-medium text-[14px] capitalize cursor-pointer hover:text-red-500 transition duration-300">
+                    Accessories
+                </a>
+            </li>
+            
+        
+            
+            <li>
+                <a data-v-5fddadf1="" href="equip.html" class="text-[#3d3d3d] font-medium text-[14px] capitalize cursor-pointer hover:text-red-500 transition duration-300">
+                    Equipments
+                </a>
+            </li>
+            <li>
+                <a data-v-5fddadf1="" href="eye.html" class="text-[#3d3d3d] font-medium text-[14px] capitalize cursor-pointer hover:text-red-500 transition duration-300">
+                    Eyewear
+                </a>
+            </li>
+            <li>
+                <a data-v-5fddadf1="" href="wear.html" id="wearLink"class="text-[#3d3d3d] font-medium text-[14px] capitalize cursor-pointer hover:text-red-500 transition duration-300">
+                    Wearable
+                </a>
+            </li>
+            <script>
+                const currentPage = window.location.pathname;
+                const wearLink = document.getElementById('wearLink');
+                
+                if (currentPage.includes('wear.html')) {
+                    wearLink.classList.add('text-red-500'); // Add the red color for active page
+                }
+            </script>
+            <li>
+                <a data-v-5fddadf1="" href="foot.html" class="text-[#3d3d3d] font-medium text-[14px] capitalize cursor-pointer hover:text-red-500 transition duration-300">
+                    Footwear
+                </a>
+            </li>
+            <li>
+                <a data-v-5fddadf1="" href="bi.html" class="text-[#3d3d3d] font-medium text-[14px] capitalize cursor-pointer hover:text-red-500 transition duration-300">
+                    Bicycles
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <div class="text-center my-8">
+        <span data-v-0305959e="" class="text-red-500 fsize14 sm-fsize10 opacity-75 letterspacing-2px">
+            Everything you need for your fitness journey is right here.
+        </span>
+        
+        <h1 class="text-3xl font-bold text-gray-700">SMART WATCHES</h1>
+        
+    </div>
+
+    <!-- Collection Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-6 max-w-7xl mx-auto">
+        <!-- Item 1 -->
+        <div class="group relative bg-white rounded-lg overflow-hidden shadow-lg transition-all duration-300 w-[300px] h-[400px]">
+            <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
+            <img src="https://nimbuscluster.blob.core.windows.net/server01/hrx/subcatImage/subcatImage-DhqfPt5Dck00qdjW1URtX-1661141093" alt="Wearable 1" class="w-full h-full object-cover group-hover:opacity-70 transition-opacity duration-300">
+            <div class="absolute bottom-0 left-0 right-0 bg-transparent text-white p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <h3 class="text-lg font-semibold pl-3">WEARABLE - HRX AUDIO</h3>
+            </div>
+        </div>
+        <div class="group relative bg-white rounded-lg overflow-hidden shadow-lg transition-all duration-300 w-[300px] h-[400px]">
+            <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
+            <img src="https://nimbuscluster.blob.core.windows.net/server01/hrx/subcatImage/subcatImage-bI00owcSbNiSoXWg8Xaxh-1661141173" alt="Wearable 1" class="w-full h-full object-cover group-hover:opacity-70 transition-opacity duration-300">
+            <div class="absolute bottom-0 left-0 right-0 bg-transparent text-white p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <h3 class="text-lg font-semibold pl-3">WEARABLE - HRX AUDIO</h3>
+            </div>
+        </div>
+        
+        
+        
+        
+            
+        </div>
+        
+        
+      
+    </div>
+    <section class="mindfuel-section bg-white">
+      <div class="side-red-line"></div>
+      <div class="image-text-container-second">
+        <div class="text-container-second">
+          <div>
+            <p class="highlight">HRX MIND FUEL</p>
+            <h2>LEVEL UP YOUR FITNESS</h2>
+            <p class="mind-fuel-text">CONTENT TO ENERGIZE YOUR BODY AND MIND</p>
+            <br />
+            <p class="mind-fuel-text">
+              Discover the latest content from Team HRX that will help you make
+              your fitness journey exciting and engaging. Tune into content
+              pieces like podcasts, Workout Videos and HRX Blogs to level up
+              your knowledge and keep you in the zone.
+            </p>
+            <div>
+              <a href="">
+                <button class="find-workout-button">FIND A WORKOUT</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="image-container-secnd-mid-fuel">
+          <div>
+            <img src="https://nimbuscluster.blob.core.windows.net/server01/hrx/HRX/Podcast.png" alt="" height="100%" width="20%" />
+          </div>
+          <div>
+            <img
+              src="https://nimbuscluster.blob.core.windows.net/server01/hrx/HRX/Workout1.png"
+              alt=""
+              height="100%"
+              width="20%"
+            />
+          </div>
+          <div>
+            <img src="https://nimbuscluster.blob.core.windows.net/server01/hrx/HRX/Blogs.png" alt="" width="10%" height="100%" />
+          </div>
+        </div>
+      </div>
+      <div class="side-red-line"></div>
+    </section>
+    <footer>
+        <div>
+          <div class="logs-links">
+            <img src="./ASSETS/HRX-LOGO.png" alt="">
+            <div class="social-media-link">
+              <a href="https://www.facebook.com/hrxbrand">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white mr-8 feather feather-facebook">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/hrxbrand/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white mr-8 feather feather-instagram">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="https://x.com/hrxbrand">
+                <img src="https://nimbuscluster.blob.core.windows.net/server01/hrx/HRX/Twitter-new-logo.jpeg" alt="twitter" class="mr-8 w-9 h-9">
+              </a>
+              <a href="https://www.youtube.com/user/hrxbrand">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white mr-8 feather feather-youtube">
+                  <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="navigation">
+            <div>
+              <h2>NAVIGATION</h2>
+              <a href=""><p>Terms & Conditions</p></a>
+              <a href=""><p>Terms of Use</p></a>
+            </div>
+            <div>
+              <h2>COLLECTIONS</h2>
+              <a href=""><p>Featured</p></a>
+            </div>
+            <div>
+              <h2>COMMUNITY</h2>
+              <a href=""><p>HRX Hub</p></a>
+              <a href=""><p>Workouts</p></a>
+              <a href=""><p>Podcasts</p></a>
+              <a href=""><p>HRX Community</p></a>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
+
+
+

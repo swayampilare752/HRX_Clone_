@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRX Community</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            /* Light gray background */
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            padding: 15px 30px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            font-family: Arial, sans-serif;
+
+        }
+
+        .logo img {
+            height: 30px;
+            margin-left: 50px;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 40px;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .nav-menu a:hover,
+        .nav-menu .active {
+            color: #ff4b5c;
+            /* Red highlight for active */
+        }
+
+        .login-button {
+            background-color: #ff4b5c;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 16px;
+            margin-left: 20px;
+
+        }
+
+        .login-button:hover {
+            background-color: #e03e4e;
+            box-shadow: #e74747;
+        }
+
+        /* Content Section */
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 50px 30px;
+            gap: 20px;
+        }
+
+        .text-section {
+            flex: 1;
+            max-width: 60%;
+        }
+
+        .text-section h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .text-section p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .see-events-button {
+            display: inline-block;
+            background-color: #ff4b5c;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        .see-events-button:hover {
+            background-color: #e03e4e;
+        }
+
+        /* Image Section */
+        .image-section {
+            flex: 1;
+            max-width: 40%;
+        }
+
+        .image-section img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .h_rectangle {
+            margin: 0 40px;
+
+        }
+
+        .main-image {
+            position: relative;
+            /* Set the parent container to relative positioning */
+            display: inline-block;
+            /* Ensure the image and overlay block respect boundaries */
+            width: 100%;
+            /* Make the container responsive */
+            height: auto;
+            overflow: hidden;
+            /* Prevent content overflow */
+        }
+
+        .main-image img {
+            width: 100%;
+            /* Make the image responsive */
+            height: auto;
+            /* Keep the aspect ratio */
+            display: block;
+            /* Ensure no gaps around the image */
+        }
+
+        .main-image .overlay {
+            position: absolute;
+            /* Overlay is positioned relative to .main-image */
+            top: 0;
+            left: 0;
+            width: 100%;
+            /* Cover the entire .main-image */
+            height: 100%;
+            /* Same height as the image container */
+            background-color: rgba(0, 0, 0, 0.6);
+            /* Semi-transparent black overlay */
+            z-index: 1;
+            /* Place it above the image but below other content */
+        }
+
+        .red-block,
+        .some-text {
+            position: absolute;
+            z-index: 2;
+            /* Place above the overlay */
+        }
+
+        .red-block {
+            bottom: 30px;
+            /* Adjust the position as needed */
+            /* left: 20px; */
+            /* Adjust the position as needed */
+            background-color: #e74747;
+            height: 100px;
+            width: 50px;
+        }
+
+        .some-text {
+            bottom: 40px;
+            /* Adjust vertical position */
+            left: 80px;
+            /* Adjust horizontal position */
+            color: white;
+            max-width: 500px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            width: 100%;
+            height: 300px;
+        }
+
+        .img-footer img {
+            height: 120px;
+            margin-left: 120px;
+            margin-bottom: 50px;
+        }
+
+        .scroller {
+            border: 2px solid black;
+            margin: 50px 100px;
+            height: 150px;
+
+        }
+
+        .scroller div {
+            border: 2 px solid red;
+            height: 30%;
+        }
+
+        .scrollable-container {
+            border: 2px solid #ccc;
+            width: 100vw;
+            height: 200px;
+            overflow-y: auto;
+            /* Adds vertical scrollbar */
+            overflow-x: hidden;
+            /* Prevents horizontal scroll */
+            padding: 10px;
+            margin: 50px 70px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .scrollable-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .scrollable-container p {
+            line-height: 1.6;
+            color: #555;
+            text-align: justify;
+        }
+
+        .footer {
+            display:flex;
+            background-color: black;
+            width: 100%;
+            height: 300px;
+            /* border: 2px solid green; */
+            gap: 40px;
+        }
+
+        .img-footer img {
+            height: 120px;
+            margin-left: 120px;
+            margin-bottom: 50px;
+        }
+
+        .footer-keeper {
+            display: flex;
+            gap:50px;
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="https://www.hrxbrand.com/img/MicrosoftHRX.0fe18b05.png" alt="HRX Logo">
+        </div>
+        <!-- Navigation -->
+        <div class="nav-menu">
+            <a href="#">Home</a>
+            <a href="#">Collection</a>
+            <a href="#">HRX Hub</a>
+            <a href="#" class="active">Community</a>
+            <a href="#">Blog</a>
+            <a href="#">Press Release</a>
+            <a href="#">Connect</a>
+        </div>
+        <!-- Login Button -->
+        <a href="#" class="login-button">Login</a>
+    </div>
+    <div class="main-image">
+        <!-- Black overlay -->
+        <div class="overlay"></div>
+        <!-- Image -->
+        <img src="https://www.hrxbrand.com/img/hrxbanner1.e39eefd7.png" alt="goalkeeper">
+        <!-- Red block -->
+        <div class="red-block"></div>
+        <!-- Text overlay -->
+        <div class="some-text">
+            <h3 style="color: #e74747; margin-right: 10px; margin-bottom: 10px;">HRX COMMUNITY</h3>
+            <h2 style="font-weight: bolder; color: white; display: inline; margin-bottom: 10px;">BE A PART OF THE TRIBE
+            </h2>
+            <h4 style="margin-top: 10px; font-weight: lighter;">Be a member of HRX squad</h4>
+        </div>
+    </div>
+
+
+
+    </div>
+
+    <div class="scrollable-container">
+        <img src="https://via.placeholder.com/400x200" alt="Sample Image">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque commodo tellus, a pellentesque
+            purus consequat sit amet. Duis id dui metus. Quisque vestibulum, lorem ut tincidunt hendrerit, enim libero
+            suscipit nisi, ac laoreet ligula metus id sapien.
+        </p>
+
+
+    </div>
+    <!-- Content Section -->
+    <div class="content">
+        <!-- Text Section -->
+        <div class="text-section">
+            <h1>HIIT + Long Hill Repeats</h1>
+            <p>Be a part of the tribe that's limitless</p>
+            <p>
+                HRX Running Sessions with the sole objective of creating and increasing awareness about running, HRX has
+                always been part of every major marathon in the country. We held the first ever Virtual Marathon in the
+                middle of the pandemic. Runners and communities all over India participated in this win.
+            </p>
+            <p>
+                The launch of HRX Propulsion Running Shoes makes HRX a severe contender in the running shoe market. In
+                2018, we joined hands with established running groups, Pune Running Community and Lokhandwala Running
+                Community in Mumbai to take this objective forward.
+            </p>
+            <a href="#" class="see-events-button">SEE UPCOMING EVENTS</a>
+        </div>
+        <!-- Image Section -->
+        <div class="image-section">
+            <img src="https://nimbuscluster.blob.core.windows.net/server01/hrx/image/image--T-jbr4yotYsZGCNEVczG-1662446526"
+                alt="Run with HRX">
+        </div>
+
+    </div>
+    <div class="img-container-grid">
+        <div class="h_rectangle"><img
+                src="https://nimbuscluster.blob.core.windows.net/server01/hrx/image/gallery-Wj_5NuzgsIjSceTrpJkJE-1662370932"
+                class="img-grid-c">
+        </div>
+
+        <div class="bigsquare_blank">
+            <div class="inner_square"><img
+                    src="https://nimbuscluster.blob.core.windows.net/server01/hrx/image/gallery-4IN8704ShgL8L809mGhJX-1662370933"
+                    class="img-grid-c"></div>
+            <div class="inner_square"><img
+                    src="https://nimbuscluster.blob.core.windows.net/server01/hrx/image/gallery-mX460JzjPFaCD3uT_dWX_-1662370934"
+                    class="img-grid-c"></div>
+            <div class="inner_square"><img
+                    src="https://nimbuscluster.blob.core.windows.net/server01/hrx/image/gallery-0AMJw8tjStBOgEonByq73-1662370936"
+                    class="img-grid-c"></div>
+            <div class="inner_square"><img
+                    src="https://nimbuscluster.blob.core.windows.net/server01/hrx/image/gallery-ywvfJJ-gNcjvjw9Y38Nkc-1662370937"
+                    class="img-grid-c"></div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="footer-img-svg">
+                <div class="img-footer">
+                    <img src="https://www.hrxbrand.com/img/footerlogo.f432dd37.png" alt="">
+                    <!-- <div class="img-overlay-footer"></div> -->
+                </div>
+                
+            </div>
+            <div class="footer-keeper">
+                <div class="navigation">
+                    <h3 style="color: #ff4b5c;">NAVIGATION</h3>
+                    <BR></BR>
+                    <P>terms and condition</P>
+                    <P>terms of use</P>
+                </div>
+                <div class="collections">
+                    <h3 style="color: #ff4b5c;">COLLECTIONS</h3>
+                    <BR></BR>
+                    <P>featured</P>
+
+                </div>
+                <div class="Community">
+                    <h3 style="color: #ff4b5c;">COMMUNITY</h3>
+                    <BR></BR>
+                    <P>HRX Hub</P>
+                    <p>workouts</p>
+                    <p>Podcasts</p>
+                    <P>HRX community</P>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>

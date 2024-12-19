@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./input.css"/>
+    <link rel="stylesheet" href="./output.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <header
+      class="w-screen flex fixed h-1/7 bg-black py-3 px-16 text-white items-center justify-between text-sm font-bold z-100 top-0" >
+      <div class="p-3 w-24">
+        <img src="./ASSETS/HRX-LOGO.png" alt=" HRX logo image" width="70px" />
+      </div>
+      <nav class="flex flex-row gap-10">
+        <a href=""class="">Home</a>
+        <a href=""class="">Collection</a>
+        <a href=""class="">HRX Hub</a>
+        <a href=""class="">Community</a>
+        <a href=""class=""> Blog</a>
+        <a href=""class="">Press Release</a>
+        <a href=""class="">Connect</a>
+      </nav>
+      <button
+        style="
+          background-color: #e74747;
+          padding-right: 22px;
+          padding-left: 22px;
+        "
+        class="py-2.5"
+      >
+        Login
+      </button>
+    </header>
+    <div class="banner">
+        <img height="350px"width="100%" src="./assets/communitychannelbanner.664a592b.png" alt="hrx_hub_image">
+    </div>
+    <div class="banner_opacity">
+    </div>
+    <div class="side_container">
+      <div class="red_banner"></div>
+      <div class="text_banner">
+        <div id="right_banner_items">
+          <p style="color: white;">Home</p>
+          <span style="color:#E74747">></span>
+          <span style="color: #E74747;">HRX Hub</span>
+        </div>
+        <div >
+          <h1 style="color: white; font-size: 28px"><b>HRX HUB</b></h1>
+          <P style="color: white; font-size: 14px">Share your fitness journey with world</P>
+        </div>
+      </div>
+    </div>
+
+    <!--container-->
+    <div style="background-color: #f2f2f2;">
+    <div class="container">
+
+      <!--left-cntainer-->
+      <div class="left_div">
+        <div class="input_box">
+          <input type="text" placeholder="Share your post">
+          <div class="favicon_items">
+            <!--fav_item-1-->
+            <div class="fav_item">
+              <img height="24px" width="24px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH9SURBVHgB7ZhNbsIwEIXHUQrsSpeAVNEbhBukC3527Q3IDVpO0vYEwAnaJWRDblB6grKCZWFXpEruDHFQBA6JEXGyyJOCJvYgfXJe7JkwiNC3bVcrpdITZ8zC2ypoEON8VHPd8S6GCKhyuTzD0ALN4gDzxnTakoKt2m2HG8bQz+RzYGwN6aspLtLAlGUgVF+Ei7rrtkCTlp3ODy4C2cY2YnIXoFOMzUV0vVuxI6NzbmESTVnLbncGKShsdOl8Howe3ItFsPHyzMrV1SMPoDQbnflP5Lk+nb4eJph5MDpeR2Bh8y9Ap0JGl03HvZWZqQBTVQGmqgJMVQWYqnILZiZNXHU6fSyLnD/O325d9yMuX1QtQzyo17/b7eDO85SKg0QrJqBGGNomY++rXq8P8VBUwlDl4pQwpjG4JFgIai+ORV4UnKy+o/JGFc5QhToFd6roVIUzzoGSwSWphFXgzHOhwnBYhd5g2IcE5XkAh38E0VckA1OBCulFJZngTkGRjAtApaIwmJUXKFIYTMuHkyiJF6IpbjeJd/4U5TfV1GSLxWG4iecBzG/hxMuAdhrXJ5Nx9mCcr6mVY9Q+MuYRFA1nD4ZQ2InfHw4bO+JstZENGrj/fkGGIqNLx+kHvyN8gv8JSqvI6I3JxJHN7c8FPIwdPPceQMN+Fhi9Jowu0z//7dBKU0HH9gAAAABJRU5ErkJggg==" alt="">
+              <p>Add Photo</p>
+             <!--fav_item-2-->
+            </div>
+            <div class="fav_item">
+            <img height="18px" width="24px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAeCAYAAABe3VzdAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHOSURBVHgB7ZhPTsJAFMbfK13grlswGjiBHAE3wFJOoJzAuHOHngA9gXoDltAVN9AbUOMftmXXRtrne5iSsaYEM1OpCb+kzJCvlK8zbzrvFUFh2mw65XLZgS1TGY28pI/y8d5uD4DoDBC3bi6Bjd0HYXhRmrVafTZ2yUcZikXDsu09iwBO5JvFLSLWkyNCPFbPVrXlEcc9RfbSegxwq+iTtM4zNkxEOfeHztdkT6d2Mq0fiPMDZe5nnQ6Q8g9qXAgvnY5XIsrU31otn6+dqXNYrcIJifzKeJzWpXFsyCCKIseyLNgUvqHat98TOQj6IDudcluDgrL5EG2JnUFdTBn0ICe0DcoTvzoe1xdEXcjBqLbBmOhZ2kPXHYpRQrwGgxiPwf3R6Cq9U+iQyyKRXaPqul0iegBNCr+KbcgB2fZ49O642wRNjI+gpG8Ux49gwJygPYK8II6k5eymydnNgPObBhjESLLApp7QsLEEI1Oclzlhlyzo8n8MSpH010WRYiKzYLOVjqcWNrpFEevzRF1TFC1ZV7DlspP8Foyimlp0LfixV/rq+sh3KtlHHwqI5JrLWXhtt284Ds6hWAzDMOytgqgoL46EIAj8+mTiS/8TSETAnuBTunwAAAAASUVORK5CYII=" alt="">
+            <p>Add Video</p>
+          </div>
+            <!--fav_item-3-->
+            <div class="fav_item">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFHSURBVHgB7ZfNDYJAEIV30AK4amJiKXpRu7AGK1A7sAO1CzxJKSYmeqUBHWduG2QEmV2Ww34JWf4WXmYfvIx5LJfIm+kpiek5UaAW8OW/8eUCPD4XizW94GAACgDYjbLsfF+tZgPEK13O6b75r+d4ryCSKBKX0u4UEQ98jsRteXwB7Ovm+19ixNQ6Krh6NPKWT7Isr5vuXeA7STY03Eho8aaK/VM9xrsHbWzvAeKp7M2q53T6FdvVq/JmFZ0J/PJeyZvSvM4Elr1X9qY4MWaxkihQC3Ttv38zOlgFm2Z0uCVumNHBBDbN6GAetPmV0UPTA+zqDYw50i4vf8reDP6bqcvo4AJrMzpmsZIoUIv6P+iq/5VwVkFt/2t8C9T2vxLOBGr7XwlnHrRp0/9KePmK2/S/Es4Ftu1/JZwLbN3/SsQsVhIFavkAnY4h0WliNgYAAAAASUVORK5CYII=" alt="">
+            <p>Add Poll</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--right-container-->
+      <div class="right_div">
+        <img height="auto" width="100%" src="./assets/image2.343efade.png" alt="">
+
+        <div class="image_dis">
+          <span>BLOGS</span>
+          <p>INSPIRED BY HRITIK ROSHAN'S FITNESS JOURNEY.</p>
+          <button>Explore Blogs</button>
+        </div>
+      </div>
+    </div>
+    </div>
+</body>
+</html>

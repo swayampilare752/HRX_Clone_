@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRX blog</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            padding: 15px 30px;
+            position: fixed;
+            top: 0;
+            height: 70px;
+            width: 100%;
+            z-index: 1000;
+            font-family: Arial, sans-serif;
+
+        }
+
+        .logo img {
+            height: 30px;
+            margin-left: 50px;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 40px;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .nav-menu a:hover,
+        .nav-menu .active {
+            color: #ff4b5c;
+            /* Red highlight for active */
+        }
+
+        .login-button {
+            background-color: #ff4b5c;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 16px;
+            margin-right: 60px;
+
+        }
+
+        .login-button:hover {
+            box-shadow: #ff4b5c;
+        }
+
+        .img-holder {
+            margin-top: 70px;
+            width: 350px;
+            position: relative;
+        }
+
+        .img-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 99%;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Black overlay with 50% opacity */
+            z-index: 1;
+        }
+
+        .blog-category {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* border: 2px solid red; */
+            margin: 50px 100px;
+            height: 700px;
+
+        }
+
+        h2 {
+            color: white;
+            margin: 50px 120px;
+        }
+
+        .img-holder-blog img {
+            width: 250px;
+            height: 300px;
+            margin: 25px;
+        }
+
+        .img-holder-blog img:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+
+
+        }
+
+        .text-holder {
+            /* border: 2px solid red; */
+            height: 500px;
+            margin: 50px 100px;
+            color: white;
+            /* display: flex; */
+            text-align: center;
+        }
+
+        .footer {
+            display: flex;
+            /* justify-content: space-between; */
+            align-items: center;
+            background-color: black;
+            width: 100%;
+            height: 300px;
+            /* border: 2px solid green; */
+            gap: 100px;
+        }
+
+        .img-footer img {
+            height: 120px;
+            margin-left: 120px;
+            margin-bottom: 50px;
+        }
+
+        .footer-keeper {
+            display: flex;
+            gap: 50px;
+            color: white;
+
+        }
+        .img-overlay-footer{
+            position: absolute;
+            top: 1900px;
+            left: 0;
+            width: 100vw;
+            height: 46%;
+            background-color: rgba(241, 37, 37, 0.5);
+            /* Black overlay with 50% opacity */
+            z-index: 1;
+        }
+        
+    </style>
+    <link rel="stylesheet" href="../../Gudu/styles.css">
+    <link rel="stylesheet" href="../../mansi/src/input.css">
+    <link rel="stylesheet" href="../../mansi/src/output.css">
+    <link rel="stylesheet" href="../../Swayam/Collection/styles.css">
+    <link rel="stylesheet" href="../../Swayam/Accessories/styles.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="https://www.hrxbrand.com/img/MicrosoftHRX.0fe18b05.png" alt="HRX Logo">
+        </div>
+        <!-- Navigation -->
+        <div class="nav-menu">
+            <a href="../../Gudu/index.html">Home</a>
+            <a href="../../Swayam/Collection/collection.html">Collection</a>
+            <a href="../../mansi/src/hrx_hub.html">HRX Hub</a>
+            <a href="../../shanewaz/HRX_community/HRX_community.html">Community</a>
+            <a href="#" class="active">Blog</a>
+            <a href="#">Press Release</a>
+            <a href="#">Connect</a>
+        </div>
+        <!-- Login Button -->
+        <a href="#" class="login-button">Login</a>
+
+    </div>
+    <div class="main">
+        <div class="img-holder">
+            <img src="https://www.hrxbrand.com/img/hrxbanner2.1ec721ab.png" alt="">
+            <div class="img-overlay"></div>
+            
+        </div>
+
+        <h2>Blogs Categories</h2>
+        <div class="blog-category">
+            <div class="img-holder-blog">
+                <img src="https://nimbuscluster.blob.core.windows.net/server01/hrx/media/media-WEuM_pverUAB3WmyFwGBE-1692790402"
+                    alt=""><img
+                    src="https://nimbuscluster.blob.core.windows.net/server01/hrx/media/media-jzHPr0P6RaECoUCmlZkwG-1692790418"
+                    alt=""><img
+                    src="https://nimbuscluster.blob.core.windows.net/server01/hrx/media/media-nyMHq8D-o16Uvtp3h5KvR-1692790443"
+                    alt=""><img
+                    src="https://nimbuscluster.blob.core.windows.net/server01/hrx/media/media-cB_XEf1QKe-TVgOV2or5a-1692790489"
+                    alt=""><img
+                    src="https://nimbuscluster.blob.core.windows.net/server01/hrx/media/media--ZTbEdBVaxXNtipUsQTMs-1692790513"
+                    alt=""><img
+                    src="https://nimbuscluster.blob.core.windows.net/server01/hrx/media/media-DcEFqowsrQa0pA8J3EqVI-1692790532"
+                    alt=""><img
+                    src="https://nimbuscluster.blob.core.windows.net/server01/hrx/media/media-LipCr1f8dgI6rvpouUi0--1693283327"
+                    alt=""><img
+                    src="https://nimbuscluster.blob.core.windows.net/server01/hrx/media/media-97I667IWdnjzoeOdqAhza-1693287105"
+                    alt="">
+            </div>
+
+        </div>
+        <div class="text-holder">
+            <h3>MANY DISCIPLINES , ONE ETHOS</h3>
+            <p>Be a part of a community that never settles for any less</p>
+
+        </div>
+        <div>
+            <img src="https://www.hrxbrand.com/img/HRXmusic.150930e5.png" alt="">
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-img-svg">
+                <div class="img-footer">
+                    <img src="https://www.hrxbrand.com/img/footerlogo.f432dd37.png" alt="" style="position: relative;">
+                    <div class="img-overlay-footer"></div>
+                </div>
+            </div>
+            <div class="footer-keeper">
+                <div class="navigation">
+                    <h3 style="color: #ff4b5c;">NAVIGATION</h3>
+                    <BR></BR>
+                    <P>terms and condition</P>
+                    <P>terms of use</P>
+                </div>
+                <div class="collections">
+                    <h3 style="color: #ff4b5c;">COLLECTIONS</h3>
+                    <BR></BR>
+                    <P>featured</P>
+
+                </div>
+                <div class="Community">
+                    <h3 style="color: #ff4b5c;">COMMUNITY</h3>
+                    <BR></BR>
+                    <P>HRX Hub</P>
+                    <p>workouts</p>
+                    <p>Podcasts</p>
+                    <P>HRX community</P>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
